@@ -32,7 +32,7 @@ public class ProductController {
         productService.update(id, request);
     }
 
-    @GetMapping("/category/{categoryId}")
+    @GetMapping("/categories/{categoryId}")
     public List<ProductListResponse> listByCategory(@PathVariable UUID categoryId) {
         return productService.listByCategory(categoryId)
                 .stream().map(p -> modelMapper.map(p, ProductListResponse.class)).toList();

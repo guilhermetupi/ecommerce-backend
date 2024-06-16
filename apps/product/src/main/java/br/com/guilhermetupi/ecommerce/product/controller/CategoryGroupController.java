@@ -13,7 +13,7 @@ import java.util.UUID;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/products/category-groups")
+@RequestMapping("/category-groups")
 public class CategoryGroupController {
     private final CategoryGroupService categoryGroupService;
     private final ModelMapper modelMapper;
